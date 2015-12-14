@@ -1,5 +1,5 @@
 <?php
-	require '/lib/simple_html_dom.php';
+	require 'simple_html_dom.php';
 	  $in = json_decode(file_get_contents('php://input'), true);
 	  $file = file_get_contents('http://jvndb.jvn.jp/ja/rss/jvndb_new.rdf',LIBXML_NOCDATA);
 	  $xml = simplexml_load_string($file);
